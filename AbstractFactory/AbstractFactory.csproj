@@ -35,6 +35,22 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="IFactory.cs" />
+    <Compile Include="Protoss\ProtossHeavyUnit.cs" />
+    <Compile Include="Terran\TerranHeavyUnit.cs" />
+    <Compile Include="Protoss\ProtossLightUnit.cs" />
+    <Compile Include="Terran\TerranLightUnit.cs" />
+    <Compile Include="Zerg\ZergHeavyUnit.cs" />
+    <Compile Include="Zerg\ZergLightUnit.cs" />
+    <Compile Include="Terran\TerranFactory.cs" />
+    <Compile Include="Protoss\ProtossFactory.cs" />
+    <Compile Include="Zerg\ZergFactory.cs" />
+    <Compile Include="IUnit.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Folder Include="Zerg\" />
+    <Folder Include="Protoss\" />
+    <Folder Include="Terran\" />
+  </ItemGroup>
 </Project>
