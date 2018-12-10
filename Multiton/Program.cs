@@ -6,7 +6,9 @@ namespace Multiton
 	{
 		public static void Main(string[] args)
 		{
-			Console.WriteLine("Hello World!");
+			Logger.getInstance("Hello");
+			Logger.getInstance("World");
+			Logger.getInstance("Hello");
 		}
 	}
 }

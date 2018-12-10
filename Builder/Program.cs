@@ -6,7 +6,17 @@ namespace Builder
 	{
 		public static void Main(string[] args)
 		{
-			Console.WriteLine("Hello World!");
+			Director director = new Director();
+
+			ICarBuilder rcb = new RichCarBuilder();
+			ICarBuilder ccb = new CheapCarBuilder();
+
+			director.Construct(rcb);
+			director.Construct(ccb);
+
+			Console.WriteLine(rcb.GetCar().GetInfo());
+			Console.WriteLine(ccb.GetCar().GetInfo());
+
 		}
 	}
 }

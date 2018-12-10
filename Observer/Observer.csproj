@@ -33,6 +33,11 @@
     <Reference Include="System" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Concrete\CurrentConditionsDisplay.cs" />
+    <Compile Include="Concrete\WeatherData.cs" />
+    <Compile Include="Interfaces\IDisplayElement.cs" />
+    <Compile Include="Interfaces\IObserver.cs" />
+    <Compile Include="Interfaces\ISubject.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

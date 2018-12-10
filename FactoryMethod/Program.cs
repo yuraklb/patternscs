@@ -6,7 +6,17 @@ namespace FactoryMethod
 	{
 		public static void Main(string[] args)
 		{
-			Console.WriteLine("Hello World!");
+			IHouse house = null;
+
+			IDeveloper developer = new WoodDeveloper();
+			house = developer.Create();
+
+			Console.WriteLine(house.GetHouseType());
+
+			developer = new PanelDeveloper();
+			house = developer.Create();
+
+			Console.WriteLine(house.GetHouseType());
 		}
 	}
 }

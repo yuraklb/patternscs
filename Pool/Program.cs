@@ -6,7 +6,13 @@ namespace Pool
 	{
 		public static void Main(string[] args)
 		{
-			Console.WriteLine("Hello World!");
+			UnitPool up = new UnitPool();
+
+			Unit u = up.GetUnit();
+
+			u.SetPosition(1, 1);
+
+			up.ResetUnit(u);
 		}
 	}
 }
