@@ -33,16 +33,6 @@
     <Reference Include="System" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Abstract\Beverage.cs" />
-    <Compile Include="Abstract\CondimentDecorator.cs" />
-    <Compile Include="Concrete\DarkRoast.cs" />
-    <Compile Include="Concrete\Decaf.cs" />
-    <Compile Include="Concrete\DecoratorItems\Mocha.cs" />
-    <Compile Include="Concrete\DecoratorItems\Soy.cs" />
-    <Compile Include="Concrete\DecoratorItems\Whip.cs" />
-    <Compile Include="Concrete\Espresso.cs" />
-    <Compile Include="Concrete\HouseBlend.cs" />
-    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
